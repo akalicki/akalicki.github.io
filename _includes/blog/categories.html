@@ -1,0 +1,36 @@
+<div class="col-sm-6 col-md-12">
+    <div id="categories" class="panel panel-primary">
+        <div class="panel-heading text-center">
+            <h5>Blog Entry Categories</h5>
+        </div>
+        
+        <ul class="list-group">
+          {% comment %} list all categories {% endcomment %}
+          {% for category in site.categories %}
+            <li class="list-group-item">
+                <a href="{{ site.blog }}/{{ category | first }}"><i class="icon-chevron-right"></i> {{ category | first | capitalize }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div class="col-sm-6 col-md-12">
+    <div id="tags" class="panel panel-primary">
+        <div class="panel-heading text-center">
+            <h5>Trending Topics</h5>
+        </div>
+        <div class="text-center">
+            <ul class="list-inline push-top">	
+              {% comment %}
+                tag cloud with sizes relative to number of times used / total tags
+              {% endcomment %}
+              {% for tag in site.tags %}
+                <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 75 }}%;">
+                    <span>{{ tag | first }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

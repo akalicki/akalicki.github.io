@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ site.name }}</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    
+    <link href="/assets/css/main.min.css" rel="stylesheet" media="screen">
+    
+    <script src="http://cdn.jotfor.ms/static/jotform.js?3.1.1352"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header" class="container row">
+        <div class="col-md-3">
+            <h1 id="site-title" class="text-center"><a href="{{ site.url }}" class="link-black">{{ site.name }}</a></h1>
+            <p class="media-links text-center">
+                {% include media-links.html %}
+            </p>
+        </div>
+        <div class="col-md-9">
+            <h2 class="lead text-center">Studying Computer Science at <strong><a href="http://www.columbia.edu/">Columbia University</a></strong>.</h2>
+        </div>
+    </div>
+    
+    <!-- BODY -->
+    <div class="container row">
+          
+        <!-- navlist -->
+        <div class="col-md-3">
+            {% include main/navbar.html %}
+        </div>
+        
+        <!-- content -->
+        <div id="content" class="col-md-9">

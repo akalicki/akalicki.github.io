@@ -1,0 +1,20 @@
+<ul class="breadcrumb">
+    <li><a href="{{ site.url }}">Home</a></li>
+  {% comment %} check if blog index {% endcomment %}
+  {% if page.title == "Blog" %}
+    <li class="active">Blog</li>
+  {% else %}
+    <li><a href="{{ site.blog }}">Blog</a></li>
+    {% comment %} check if category page {% endcomment %}
+    {% if page.title contains "Category: " %}
+      <li><a href="{{ site.blog_categories }}">Categories</a></li>
+      <li class="active">{{ page.title }}</li>
+    {% comment %} normal page {% endcomment %}
+    {% else %}
+      {% for category in page.categories %}
+        <li><a href="{{ site.blog }}/{{ category }}">Category: {{ category | capitalize }}</a></li>
+      {% endfor %}
+      <li class="active">{{ page.title }}</li>
+    {% endif %}
+  {% endif %}  
+</ul>

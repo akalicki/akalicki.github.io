@@ -1,0 +1,24 @@
+---
+layout: blog
+---
+
+<h2 class="post-title">{{ page.title }}</h2>
+
+<div class="post-content">
+    <p class="lead">{{ content }}</p>
+    
+    <h3>Blog Entries</h3>
+    <ul>
+      {% comment %} this = name of category (from page title) {% endcomment %}
+      {% capture this %}{{ page.title | remove_first: "Category: " | downcase }}{% endcapture %}
+      
+      {% comment %} loop through categories to find this, display all posts {% endcomment %}
+      {% for category in site.categories %}
+        {% if category.first == this %}
+          {% for post in category.last %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+</div>

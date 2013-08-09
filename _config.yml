@@ -1,0 +1,23 @@
+# Site Variables
+name:             "Alex Kalicki"
+description:      "The personal design portfolio and blog of Alex Kalicki, a Computer Science student at Columbia University."
+url:              "http://alexkalicki.com"
+blog:             "/blog"
+blog_categories:  "/blog/categories"
+blog_tags:        "/blog/tags"
+blog_rss:         "/blog/feed.xml"
+
+# Dependencies
+markdown:         rdiscount
+pygments:         true
+
+# Blog Permalinks
+permalink:        "/blog/:categories/:year/:month/:day/:title/"
+
+# Blog Pagination
+paginate:         5
+paginate_path:    "/blog/page:num"
+
+# Server Info
+exclude:          [".gitignore", "less", "CNAME", "LICENSE", "README.md"]
+port:             4001

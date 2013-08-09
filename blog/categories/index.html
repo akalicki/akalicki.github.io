@@ -1,0 +1,17 @@
+---
+title: Categories
+layout: blog
+---
+
+<h2 class="post-title">{{ page.title }}</h2>
+<div class="post-content">
+    <p class="lead">A futile attempt to keep my thoughts organized.</p>
+    
+    <h3>All Categories</h3>
+    <ul>
+      {% comment %} loop through category list {% endcomment %}
+      {% for category in site.categories %}
+        <li><a href="{{ site.blog }}/{{ category | first }}">{{ category | first | capitalize }}</a></li>
+      {% endfor %}
+    </ul>
+</div>

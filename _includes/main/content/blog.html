@@ -1,0 +1,16 @@
+<!-- blog -->
+<div id="blog-page" class="content-page">
+    <h1 class="page-header no-top"><a href="{{ site.blog }}" class="link-black"><i class="icon-large icon-comments"></i> Blog</a></h1>
+    <p class="lead">Rambling thoughts of an idle mind.</p>
+    
+    {% comment %} print excerpts from last 3 posts {% endcomment %}
+    {% for post in site.posts limit: 3 %}
+    <div class="push-bottom push-left">
+        <h4 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        <small class="post-date">{{ post.date | date: "%B %d, %Y" }}</small>
+        <div class="post-excerpt">{{ post.excerpt }}</div>
+    </div>
+    {% endfor %}
+    
+    <p class="push-top pull-right text-right"><a href="{{ site.blog }}">See all posts</a></p>
+</div>

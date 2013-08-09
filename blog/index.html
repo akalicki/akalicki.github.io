@@ -1,0 +1,16 @@
+---
+title: Blog
+layout: blog
+---
+
+{% comment %} loop through the paginated posts and show excerpts {% endcomment %}
+{% for post in paginator.posts %}
+<div class="push-bottom">
+    <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <small class="post-date">{{ post.date | date: "%B %d, %Y" }}</small>
+    <div class="post-excerpt">{{ post.excerpt }}</div>
+</div>
+{% endfor %}
+
+<!-- pagination links -->
+{% include blog/pagination-links.html %}

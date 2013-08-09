@@ -1,0 +1,48 @@
+<div class="text-center">
+    <ul class="pagination no-bottom">
+      <!-- previous page button -->
+      {% if paginator.previous_page %}
+        <li>
+          {% if paginator.previous_page == 1 %}
+            <a href="{{ site.blog }}">&larr; Newer</a>
+          {% else %}
+            <a href="{{ paginator.previous_page_path }}">&larr; Newer</a>
+          {% endif %}
+        </li>
+      {% else %}
+        <li class="disabled">
+            <a href="{{ paginator.previous_page_path }}">&larr; Newer</a>
+        </li>
+      {% endif %}
+      
+      <!-- page links -->
+      {% if paginator.page == 1 %}
+        <li class="active"><a href="{{ site.blog }}">1</a></li>
+      {% else %}
+        <li><a href="{{ site.blog }}">1</a></li>
+      {% endif %}
+      
+      {% for count in (2..paginator.total_pages) %}
+        {% if count == paginator.page %}
+          <li class="active">
+              <a href="{{ site.blog }}page{{ count }}/">{{ count }}</a>
+          </li>
+        {% else %}
+          <li>
+              <a href="{{ site.blog }}page{{ count }}/">{{ count }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      
+      <!-- next page button -->
+      {% if paginator.next_page %}
+        <li>
+            <a href="{{ paginator.next_page_path }}">Older &rarr;</a>
+        </li>
+      {% else %}
+        <li class="disabled">
+            <a href="{{ paginator.next_page_path }}">Older &rarr;</a>
+        </li>
+      {% endif %}
+    </ul>
+</div>
