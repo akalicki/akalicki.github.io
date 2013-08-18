@@ -27,5 +27,6 @@ worth it if I'm forced to slow down and reflect just a bit more.
 
 Although I'm launching the site today, it is still very much a work in 
 progress.  If you don't like the way something looks or have a suggestion for 
-how I can improve my web presence I would love to hear from you!  Please see 
-my [contact page]({{ site.url}}#contact) to get in touch.
+how I can improve my web presence I would love to hear from you!  Please leave 
+a comment below or see my [contact page]({{ site.url}}#contact) to get in 
+touch.
