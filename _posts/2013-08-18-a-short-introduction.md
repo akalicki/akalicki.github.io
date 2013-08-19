@@ -19,9 +19,9 @@ world. This website is intended to serve as a means of professional and
 personal contact, as well as a medium for me to express my ideas and talk 
 about the things that I find interesting.
 
-I have to say that I never really used to get the point of blogging.  I guess 
-I wasn't feel very comfortable sharing my thoughts in such a public format. 
-But my feelings have somewhat come around since then. I'm beginning to think 
+I have to say that I never really used to get the point of blogging - I guess 
+I wasn't very comfortable sharing my thoughts in such a public format. But my 
+feelings have somewhat come around since then. I'm beginning to think 
 that creating some sort of public space to talk about my projects and ideas 
 might not be such a bad thing. Even if nobody reads what I have to say, it 
 will all be worth it if I'm forced to slow down and reflect just a bit more.
