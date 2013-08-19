@@ -18,4 +18,9 @@
         <loc>{{ site.url }}{{ post.url }}</loc>
     </url>
   {% endfor %}
+  
+  {% comment %} Include all project pages {% endcomment %}
+    <url>
+        <loc>{{ site.url }}/jquery-simple-gallery/</loc>
+    </url>
 </urlset>
