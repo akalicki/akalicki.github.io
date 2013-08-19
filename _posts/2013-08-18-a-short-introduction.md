@@ -1,5 +1,6 @@
 ---
 title: A Short Introduction
+date: 2013-08-18 22:00
 layout: post
 category: miscellaneous
 tags: website blog
