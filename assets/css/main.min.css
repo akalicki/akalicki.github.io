@@ -520,7 +520,7 @@ a.thumbnail:hover,a.thumbnail:focus{border-color:#ba5f54}
 .media>.pull-left{margin-right:10px}
 .media>.pull-right{margin-left:10px}
 .media-list{padding-left:0;list-style:none}
-.label{display:inline;padding:.25em .6em;font-size:75%;font-weight:bold;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}.label[href]:hover,.label[href]:focus{color:#fff;text-decoration:none;cursor:pointer}
+.label{display:inline;padding:.25em .6em;font-size:75%;font-weight:bold;line-height:1;color:#fafafa;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}.label[href]:hover,.label[href]:focus{color:#fff;text-decoration:none;cursor:pointer}
 .label:empty{display:none}
 .label-default{background-color:#555}.label-default[href]:hover,.label-default[href]:focus{background-color:#3c3c3c}
 .label-primary{background-color:#ba5f54}.label-primary[href]:hover,.label-primary[href]:focus{background-color:#9c493f}
@@ -528,7 +528,7 @@ a.thumbnail:hover,a.thumbnail:focus{border-color:#ba5f54}
 .label-info{background-color:#5bc0de}.label-info[href]:hover,.label-info[href]:focus{background-color:#31b0d5}
 .label-warning{background-color:#f0ad4e}.label-warning[href]:hover,.label-warning[href]:focus{background-color:#ec971f}
 .label-danger{background-color:#d9534f}.label-danger[href]:hover,.label-danger[href]:focus{background-color:#c9302c}
-.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:12px;font-weight:bold;color:#fff;line-height:1;vertical-align:baseline;white-space:nowrap;text-align:center;background-color:#999;border-radius:10px}.badge:empty{display:none}
+.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:12px;font-weight:bold;color:#fafafa;line-height:1;vertical-align:baseline;white-space:nowrap;text-align:center;background-color:#555;border-radius:10px}.badge:empty{display:none}
 a.badge:hover,a.badge:focus{color:#fff;text-decoration:none;cursor:pointer}
 .btn .badge{position:relative;top:-1px}
 a.list-group-item.active>.badge,.nav-pills>.active>a>.badge{color:#ba5f54;background-color:#fff}

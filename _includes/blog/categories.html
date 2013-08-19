@@ -8,7 +8,7 @@
           {% comment %} list all categories {% endcomment %}
           {% for category in site.categories %}
             <li class="list-group-item">
-                <a href="{{ site.blog }}/{{ category | first }}"><i class="icon-chevron-right"></i> {{ category | first | capitalize }}</a>
+                <a href="{{ site.blog }}/{{ category | first }}"><i class="icon-chevron-right"></i> {{ category | first | capitalize }} <span class="badge pull-right">{{ category | last | size }}</span></a>
             </li>
           {% endfor %}
         </ul>
