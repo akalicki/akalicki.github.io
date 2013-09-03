@@ -5,11 +5,10 @@ date: 2013-09-03 13:14
 layout: post
 category: miscellaneous
 tags: op-eds
-excerpt: "Media crews scrambled to the scene within minutes of the twin Boston 
-Marathon bombings that killed three, injured hundreds, and terrified millions. 
-In response to a dramatic increase in channel viewership, most major news 
-networks replayed endless video footage of the horrific attacks and promised 
-real-time coverage as the search for the perpetrators continued."
+excerpt: "I wrote this op-ed for my freshman writing seminar right after 
+the arrest of the Boston Marathon bomber. It was topical then, but I believe 
+the need to balance the use of social media and investigative journalism is 
+just as relevant today."
 ---
 
 <p class="lead">I wrote this op-ed for my freshman writing seminar right after 
