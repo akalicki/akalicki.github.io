@@ -9,6 +9,8 @@ excerpt: "I wrote this op-ed for my freshman writing seminar after
 the arrest of the Boston Marathon bomber. It was topical then, but I believe 
 the need to balance the use of social media and investigative journalism is 
 just as relevant today."
+description: "Reflections on the use and abuse of social media after the 
+Boston Marathon bombings."
 ---
 
 <p class="lead">I wrote this op-ed for my freshman writing seminar after 
