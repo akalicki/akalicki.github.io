@@ -5,13 +5,13 @@ date: 2013-09-03 13:14
 layout: post
 category: miscellaneous
 tags: op-eds
-excerpt: "I wrote this op-ed for my freshman writing seminar right after 
+excerpt: "I wrote this op-ed for my freshman writing seminar after 
 the arrest of the Boston Marathon bomber. It was topical then, but I believe 
 the need to balance the use of social media and investigative journalism is 
 just as relevant today."
 ---
 
-<p class="lead">I wrote this op-ed for my freshman writing seminar right after 
+<p class="lead">I wrote this op-ed for my freshman writing seminar after 
 the arrest of the Boston Marathon bomber. It was topical then, but I believe 
 the need to balance the use of social media and investigative journalism is 
 just as relevant today.</p>
