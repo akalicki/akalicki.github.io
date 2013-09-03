@@ -12,7 +12,7 @@ markdown:         rdiscount
 pygments:         true
 
 # Blog Permalinks
-permalink:        "/blog/:categories/:year/:month/:day/:title/"
+permalink:        "/blog/:categories/:title/"
 
 # Blog Pagination
 paginate:         5
