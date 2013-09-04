@@ -3,7 +3,7 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'alexkalicki';
-        var disqus_identifier = "Alex Kalicki | {{ page.url }}";
+        var disqus_identifier = "{{ page.title }}";
         var disqus_title = "{{ page.title }}";
         var disqus_url = "{{ site.url }}{{ page.url }}";
 
@@ -17,7 +17,7 @@
             DISQUS.reset({
                 reload: true,
                 config: function() {
-                    this.page.identifier = "{{ page.url }}";
+                    this.page.identifier = "{{ page.title }}";
                     this.page.title = "{{ page.title }}";
                     this.page.url = "{{ site.url }}{{ page.url }}";
                 }
