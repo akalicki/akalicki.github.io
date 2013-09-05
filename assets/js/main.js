@@ -5,7 +5,6 @@ jQuery(document).ready(function() {
     getPageOnLoad();
     setupNavLinks();
     setupResumeFormValidation();
-    //JotForm.init(); // set up resume form emailing
 });
 
 /* SET-UP MAIN PAGE SWITCHING
@@ -98,7 +97,7 @@ function validateResumeName() {
 function validateResumeEmail() {
     var emailField = jQuery("#resumeContactEmail");
     var email = trim(emailField.prop("value"));
-    var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\wjQuery/;
+    var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
     
     if (!emailFilter.test(email)) {
         emailField.parent().removeClass("has-success");
