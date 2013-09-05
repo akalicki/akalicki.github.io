@@ -4,6 +4,9 @@ date: 2013-08-18 22:00
 layout: post
 category: miscellaneous
 tags: website blog
+description: "Welcome to my new website! Over the past few weeks, I've done my 
+best to design a clean and simple way of communicating what I've been up to 
+and sharing my thoughts with the outside world."
 excerpt: "Over the past few weeks, I've done my best to design a clean and 
 simple way of communicating what I've been up to and sharing my thoughts with 
 the outside world. This website is intended to serve as a means of 
