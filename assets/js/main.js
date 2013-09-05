@@ -1,10 +1,11 @@
 ---
 ---
 
-jQuery(document).ready(function() {
+$(document).ready(function() {
     getPageOnLoad();
     setupNavLinks();
     setupResumeFormValidation();
+    JotForm.init(); // set up resume form emailing
 });
 
 /* SET-UP MAIN PAGE SWITCHING
@@ -12,13 +13,13 @@ jQuery(document).ready(function() {
 
 // show the given page content
 function showContentPage(page) {
-    jQuery(".nav li.active").removeClass("active");
-    jQuery(".nav a[href='" + page + "']").parent().addClass("active");
+    $(".nav li.active").removeClass("active");
+    $(".nav a[href='" + page + "']").parent().addClass("active");
     document.title = "{{ site.name }} | " + capitalize(page.slice(1));
-    jQuery(".content-page.active").fadeOut(250, function() {
-        jQuery(this).removeClass("active");
-        jQuery(page + "-page").addClass("active").fadeIn(250);
-        jQuery("#resume-success").hide();
+    $(".content-page.active").fadeOut(250, function() {
+        $(this).removeClass("active");
+        $(page + "-page").addClass("active").fadeIn(250);
+        $("#resume-success").hide();
     });
 }
 
@@ -33,23 +34,23 @@ function getPageOnLoad() {
         case "#contact":
             break;
         case "#resume-requested":
-            jQuery("#resume-success").show();
+            $("#resume-success").show();
             page = "#resume";
             break;
         default:
             page = "#home";
             break;
     }
-    jQuery(".nav a[href='" + page + "']").parent().addClass("active");
-    jQuery(page + "-page").addClass("active").fadeIn(500);
+    $(".nav a[href='" + page + "']").parent().addClass("active");
+    $(page + "-page").addClass("active").fadeIn(500);
     document.title = "{{ site.name }} | " + capitalize(page.slice(1));
 }
 
 // make same-page links trigger site content change
 function setupNavLinks() {
-    jQuery('a[href^="#"]').each(function() {
-        var page = jQuery(this).attr("href");
-        jQuery(this).click(function(e) {
+    $('a[href^="#"]').each(function() {
+        var page = $(this).attr("href");
+        $(this).click(function(e) {
             e.preventDefault();
             window.location.hash = page;
             showContentPage(page);
@@ -62,9 +63,9 @@ function setupNavLinks() {
 
  // bind events to form change
 function setupResumeFormValidation() {
-    jQuery("#resumeContactName").on("input", validateResume);
-    jQuery("#resumeContactEmail").on("input", validateResume);
-    jQuery("#resumeContactMessage").on("input", highlightMessage);
+    $("#resumeContactName").on("input", validateResume);
+    $("#resumeContactEmail").on("input", validateResume);
+    $("#resumeContactMessage").on("input", highlightMessage);
 }
 
 // check name and email fields on form change, alter submit button state
@@ -73,15 +74,15 @@ function validateResume() {
     valid = validateResumeEmail() && valid;
 
     if (valid) {
-        jQuery("#resumeSubmit").prop("disabled", "");
+        $("#resumeSubmit").prop("disabled", "");
     } else {
-        jQuery("#resumeSubmit").prop("disabled", "disabled");
+        $("#resumeSubmit").prop("disabled", "disabled");
     }
 }
  
 // check name field
 function validateResumeName() {
-    var nameField = jQuery("#resumeContactName");
+    var nameField = $("#resumeContactName");
     var name = trim(nameField.prop("value"));
     
     if (!name.length) {
@@ -95,7 +96,7 @@ function validateResumeName() {
 
 // check password field
 function validateResumeEmail() {
-    var emailField = jQuery("#resumeContactEmail");
+    var emailField = $("#resumeContactEmail");
     var email = trim(emailField.prop("value"));
     var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
     
@@ -110,7 +111,7 @@ function validateResumeEmail() {
 
 // highlight message box if text in it
 function highlightMessage() {
-    var messageField = jQuery("#resumeContactMessage");
+    var messageField = $("#resumeContactMessage");
     var message = trim(messageField.prop("value"));
     
     if (!message.length) {

@@ -7,23 +7,7 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     
     <link href="/assets/css/main.min.css" rel="stylesheet" media="screen">
-    
-    <script>
-        // defer JS loading until load, then add as child of body
-        function downloadJSOnLoad() {
-            var element = document.createElement("script");
-            element.src = "/assets/js/analytics.js";
-            document.body.appendChild(element);
-        }
-        
-        // check for browser support of event handling capability
-        if (window.addEventListener)
-            window.addEventListener("load", downloadJSOnLoad, false);
-        else if (window.attachEvent)
-            window.attachEvent("onload", downloadJSOnLoad);
-        else
-            window.onload = downloadJSOnLoad;
-    </script>
+    <script src="/assets/js/analytics.js"></script>
 </head>
 <body>
     <!-- HEADER -->
