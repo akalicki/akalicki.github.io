@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
     getPageOnLoad();
     setupNavLinks();
     setupResumeFormValidation();
-    JotForm.init(); // set up resume form emailing
+    //JotForm.init(); // set up resume form emailing
 });
 
 /* SET-UP MAIN PAGE SWITCHING
