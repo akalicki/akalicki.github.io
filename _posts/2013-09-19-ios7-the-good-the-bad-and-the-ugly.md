@@ -7,7 +7,6 @@ tags: reviews products
 description: "The good and the bad of iOS 7, as well as my thoughts on Apple's 
 future direction as a company."
 excerpt: "Just under a year from the controversial release of iOS 6, the company that essentially invented the modern smartphone is back again with an operating system it hopes will leave the complaints of the past behind it: iOS 7."
-comments: false
 ---
 
 <img class="img-responsive center" alt="iOS 7" src="/assets/images/ios7.png">
