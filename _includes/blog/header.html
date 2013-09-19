@@ -11,8 +11,8 @@
 </head>
 <body>
     <!-- HEADER -->
-    <div id="header" class="container row">
-        <div class="col-md-5">
+    <div id="header" class="container no-bottom">
+        <div class="col-md-5 col-md-offset-1">
             <h1 id="site-title" class="text-center">
                 <a href="{{ site.url }}" class="link-black">{{ site.name }}</a> | <a href="{{ site.blog }}" class="link-black">Blog</a>
             </h1>
@@ -20,13 +20,13 @@
                 {% include media-links.html %}
             </p>
         </div>
-        <div class="col-md-7">
-            <h2 class="lead text-center"><i class="icon-comments"></i> Rambling thoughts of an idle mind.</h2>
+        <div class="col-md-5">
+            <h2 class="lead no-bottom text-center"><i class="icon-comments"></i> Rambling thoughts of an idle mind.</h2>
         </div>
     </div>
     
     <!-- BODY -->
-    <div class="container row">
+    <div class="container">
         
         <!-- content -->
-        <div id="content" class="col-md-9">
+        <div id="content" class="col-md-10 col-md-offset-1">
