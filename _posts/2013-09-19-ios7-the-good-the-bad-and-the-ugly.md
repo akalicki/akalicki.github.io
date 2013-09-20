@@ -45,8 +45,8 @@ noticeable improvement that pervades every aspect of iOS 7.
 #### Control Center
 
 This was a long time coming. In previous operating systems, the user was 
-forced to navigate the settings hierarchy just to accomplish basic tasks like 
-connecting to WiFi. But no longer - as part of Apple's push to simplify the 
+forced to navigate the settings hierarchy just to accomplish basic tasks such 
+as connecting to WiFi. But no longer - as part of Apple's push to simplify the 
 way we use our phones, quick access to common necessities such as internet, 
 Bluetooth, brightness and music controls, the camera, and even a new built-in 
 flashlight are just a swipe away. Control Center can be disabled while using 
@@ -96,7 +96,7 @@ contribute to the exciting, playful feel that characterizes iOS 7. But
 animations also take time, and I found the gimmicks grew old after their 
 initial shock value. Every second I have to wait to open an app because my 
 phone is busy whizzing up to a folder is a second I could have already spent 
-in the app. The animations look good, but in my opinion a bit over-done.
+in the app. The animations look good, but are in my opinion a bit over-done.
 
 #### Notification Center
 
