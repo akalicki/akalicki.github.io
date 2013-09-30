@@ -1,3 +1,4 @@
+<div class="post-header">
 <h2 class="post-title">{{ page.title }}
   {% comment %} Add small subtitle if given in page variables {% endcomment %}
   {% if page.subtitle %}
@@ -5,4 +6,5 @@
   {% endif %}
 </h2>
 <small class="post-date">{{ page.date | date: "%B %d, %Y" }}</small>
+</div>
 <div class="post-content">

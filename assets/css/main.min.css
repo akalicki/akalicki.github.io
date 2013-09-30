@@ -810,9 +810,10 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 .push-right{padding-right:5px}
 .post-title{margin-bottom:2px}
 .post-excerpt{margin-top:5px;margin-left:5px}
-.post-content{margin-top:15px;margin-bottom:20px;margin-left:5px}
+.post-header{padding-bottom:5px;border-bottom:1px dashed #ba5f54}
+.post-content{margin-top:15px;margin-left:5px}
 .post-content .lead{margin-bottom:10px}
-#disqus_thread{margin-top:20px}
+#disqus_thread{margin-top:15px;padding-top:10px;border-top:5px double #ba5f54}
 .panel-heading h5{margin-top:5px;margin-bottom:5px}
 .has-pullquote:before{padding:0;border:none;content:attr(data-pullquote);float:right;width:275px;margin:12px -12px 24px 24px;position:relative;top:5px;font-size:23px;font-weight:400;line-height:30px;color:#ba5f54}
 .pullquote-left:before{float:left;margin:12px 12px 24px 6px}
