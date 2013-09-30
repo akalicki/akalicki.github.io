@@ -17,6 +17,7 @@
 <body>
     <!-- HEADER -->
     <div id="header" class="container no-bottom">
+        <div class="row">
         <div class="col-md-3">
             <h1 id="site-title" class="text-center"><a href="{{ site.url }}" class="link-black">{{ site.name }}</a></h1>
             <p class="media-links text-center">
@@ -26,15 +27,17 @@
         <div class="col-md-9">
             <h2 class="lead text-center">Studying Computer Science at <strong><a href="http://www.columbia.edu/">Columbia University</a></strong>.</h2>
         </div>
+        </div>
     </div>
     
     <!-- BODY -->
     <div class="container push-top">
-          
-        <!-- navlist -->
-        <div class="col-md-3">
-            {% include main/navbar.html %}
-        </div>
+        <div class="row">
         
-        <!-- content -->
-        <div id="content" class="col-md-9 col-lg-8 push-top">
+            <!-- navlist -->
+            <div class="col-md-3">
+                {% include main/navbar.html %}
+            </div>
+            
+            <!-- content -->
+            <div id="content" class="col-md-9 col-lg-8 push-top">
