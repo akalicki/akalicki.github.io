@@ -29,13 +29,13 @@
       {% for category in page.categories %}
         <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
             <a href="{{ site.blog }}/{{ category }}" itemprop="url">
-                <span itemprop="title">Category: {{ category | capitalize }}</span>
+                <span itemprop="title">{{ category | capitalize }}</span>
             </a>
         </li>
       {% endfor %}
     {% endif %}
     <li class="active" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-        <span itemprop="title">{{ page.title }}</span>
+        <span itemprop="title">{{ page.title | remove_first: "Category: " }}</span>
     </li>
   {% endif %}  
 </ul>
