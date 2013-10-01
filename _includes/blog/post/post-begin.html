@@ -1,10 +1,12 @@
-<div class="post-header">
-<h2 class="post-title">{{ page.title }}
-  {% comment %} Add small subtitle if given in page variables {% endcomment %}
-  {% if page.subtitle %}
-    <small>{{ page.subtitle }}</small>
-  {% endif %}
-</h2>
-<small class="post-date">{{ page.date | date: "%B %d, %Y" }}</small>
-</div>
-<div class="post-content">
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="post-header">
+        <h2 class="post-title">
+            <span itemprop="name">{{ page.title }}</span>
+          {% comment %} Add small subtitle if given in page variables {% endcomment %}
+          {% if page.subtitle %}
+            <small>{{ page.subtitle }}</small>
+          {% endif %}
+        </h2>
+        <small class="post-date" datetime="{{ page.date | date: '%Y-%m-%d'}}">{{ page.date | date: "%B %d, %Y" }}</small>
+    </div>
+    <div class="post-content">
