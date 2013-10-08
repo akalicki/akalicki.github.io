@@ -9,7 +9,7 @@ Science student at Columbia University."
 {% for post in paginator.posts %}
 <div class="push-bottom">
     <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <small class="post-date">{{ post.date | date: "%B %d, %Y" }}</small>
+    <small class="post-date">{{ post.date | date: "%B %-d, %Y" }}</small>
     <p class="post-excerpt">{{ post.excerpt }} <a href="{{ post.url }}">Read more...</a></p>
 </div>
 {% endfor %}
