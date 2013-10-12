@@ -9,7 +9,7 @@ future direction as a company."
 excerpt: "Just under a year from the controversial release of iOS 6, the company that essentially invented the modern smartphone is back again with an operating system it hopes will leave the complaints of the past behind it: iOS 7."
 ---
 
-<img class="img-responsive center" alt="iOS 7" src="/assets/images/ios7.png">
+<img class="img-responsive center" alt="iOS 7" src="/assets/images/apple/ios7.png">
 
 A year ago today, Apple released the sixth version of the company's flagship 
 iOS mobile operating system. Unlike the positively received iOS 5, iOS 6 was 
@@ -40,7 +40,7 @@ flatter user interface. I'm a big fan of simple, uncluttered designs (which I
 attempt to showcase on this website), and I find this change to be a huge, 
 noticeable improvement that pervades every aspect of iOS 7.
 
-<img class="pull-right push-left" alt="Control Center" src="/assets/images/iphone_control_center.png">
+<img class="pull-right push-left" alt="Control Center" src="/assets/images/apple/iphone_control_center.png">
 
 #### Control Center
 
@@ -75,7 +75,7 @@ storage service.
 
 ### THE BAD
 
-<img class="pull-left push-right" alt="Apple's 1977 Logo" src="/assets/images/apple_1977.png" width="100">
+<img class="pull-left push-right" alt="Apple's 1977 Logo" src="/assets/images/apple/apple_1977.png" width="100">
 
 #### The Color Palette
 
