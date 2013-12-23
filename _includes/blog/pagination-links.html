@@ -25,11 +25,11 @@
       {% for count in (2..paginator.total_pages) %}
         {% if count == paginator.page %}
           <li class="active">
-              <a href="{{ site.blog }}page{{ count }}/">{{ count }}</a>
+              <a href="{{ site.blog }}/page{{ count }}/">{{ count }}</a>
           </li>
         {% else %}
           <li>
-              <a href="{{ site.blog }}page{{ count }}/">{{ count }}</a>
+              <a href="{{ site.blog }}/page{{ count }}/">{{ count }}</a>
           </li>
         {% endif %}
       {% endfor %}
