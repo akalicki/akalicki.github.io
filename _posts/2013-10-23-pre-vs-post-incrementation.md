@@ -71,8 +71,8 @@ code:
 1. Post-increment can be implemented using pre-increment
 2. Post-increment creates a copy of the original value so it can be returned
 
-Not only does the post-increment operator add an extra line of code to the 
-pre-increment implementation, but it __stores the old value in a temporary__ 
+The post-increment operator not only adds an extra line of code to the 
+pre-increment implementation, but also __stores the old value in a temporary__ 
 so it can be returned after incrementing. As it must be written, the 
 post-increment operator adds a bit of overhead to that required by 
 pre-increment.
@@ -82,11 +82,11 @@ pre-increment.
 Well, it depends. Most modern compilers will optimize away the temporary 
 required for post-increment if the return value is not used. Even if the 
 compiler did not look for this type of optimization, the difference in 
-performance between using pre- and post-increment would be so minimal that it 
-would be barely perceptible even when running millions of calculations. For 
-the most part, it is probably better to stick with the more easily 
-recognizable post-implement operator for primitive values even if it nominally 
-sacrifices a bit of possible performance.
+performance between using pre- and post-increment on primitive values would be 
+so minimal as to be barely perceptible even when running millions of 
+calculations. For the most part, it is probably better to stick with the more 
+easily recognizable post-implement operator for primitives even if it 
+nominally sacrifices a bit of possible performance.
 
 #### When dealing with objects, pre-increment is safer.
 
@@ -107,7 +107,7 @@ use:
 
 1. The pre- and post-increment operators both do the same thing, but with 
 __different return values__.
-2. Post-increment requires a __potentially costly copy__.
+2. Post-increment requires a __potentially costly copy__ operation.
 3. Most __compilers will optimize__ away this copy if the return value is not 
 used.
 4. __Pre-increment is the safer route__ if the return variable is not needed, 
