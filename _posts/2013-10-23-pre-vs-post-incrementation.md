@@ -12,7 +12,6 @@ excerpt: "The pre- and post-increment operators don't only return different
 values, but also exhibit potentially substantial performance tradeoffs. This 
 post examines considerations that should be made when deciding which operator 
 to use."
-comments: false
 ---
 
 <p class="lead">Take a minute to think about your favorite high-level programming language.</p>
