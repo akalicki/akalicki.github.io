@@ -2,7 +2,7 @@
 title: "The Case for Pre-Incrementation"
 date: 2013-12-23 1:50
 layout: post
-categories: programming
+category: programming
 tags: programming theory c++
 description: "The pre- and post-increment operators don't only return 
 different values, but also exhibit potentially substantial performance 
