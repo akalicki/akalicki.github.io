@@ -85,7 +85,7 @@ compiler did not look for this type of optimization, the difference in
 performance between using pre- and post-increment on primitive values would be 
 so minimal as to be barely perceptible even when running millions of 
 calculations. For the most part, it is probably better to stick with the more 
-easily recognizable post-implement operator for primitives even if it 
+easily recognizable post-increment operator for primitives even if it 
 nominally sacrifices a bit of possible performance.
 
 #### When dealing with objects, pre-increment is safer.
@@ -110,7 +110,7 @@ __different return values__.
 2. Post-increment requires a __potentially costly copy__ operation.
 3. Most __compilers will optimize__ away this copy if the return value is not 
 used.
-4. __Pre-increment is the safer route__ if the return variable is not needed, 
+4. __Pre-increment is the safer route__ if the return value is not needed, 
 but __might confuse__ outside readers.
 
 Which increment operator do you prefer? Is your choice situational or part of 
