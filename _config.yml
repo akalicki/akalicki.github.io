@@ -9,7 +9,7 @@ blog_rss:         "/blog/feed.xml"
 
 # Dependencies
 markdown:         rdiscount
-pygments:         true
+highlighter:      pygments
 
 # Blog Permalinks
 permalink:        "/blog/:categories/:title/"
